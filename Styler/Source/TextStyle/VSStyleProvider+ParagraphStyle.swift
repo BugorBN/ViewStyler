@@ -25,8 +25,33 @@ public extension VSStyleProvider where View: VSTextView {
 
     @discardableResult
     func add(paragraphStyle: View.ParagraphStyle) -> VSStyleProvider<View> {
+        if let paragraphSpacing = paragraphStyle.paragraphSpacing {
+            add(paragraphSpacing: paragraphSpacing)
+        }
+
+        if let lineBreakMode = paragraphStyle.lineBreakMode {
+            add(lineBreakMode: lineBreakMode)
+        }
+
+        if let textAlignment = paragraphStyle.textAlignment {
+            add(textAlignment: textAlignment)
+        }
+
+        if let lineHeightMultiple = paragraphStyle.lineHeightMultiple {
+            add(lineHeightMultiple: lineHeightMultiple)
+        }
+
+        if let hyphenationFactor = paragraphStyle.hyphenationFactor {
+            add(hyphenationFactor: hyphenationFactor)
+        }
+
+        return self
+    }
+
+    @discardableResult
+    func add(paragraphSpacing: CGFloat) -> VSStyleProvider<View> {
         let paragraph = self.paragraph
-        paragraph.paragraphSpacing = paragraphStyle.paragraphSpacing
+        paragraph.paragraphSpacing = paragraphSpacing
         view.addAttribute(.paragraphStyle, value: paragraph)
         return self
     }

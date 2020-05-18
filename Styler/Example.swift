@@ -23,6 +23,6 @@ public enum ExampleStringStyle: VSTextBaseStyle, VSTextParagraphStyle {
 }
 
 extension UILabel: VSTextView {
-    public typealias FontStyle = ExampleStringStyle
+    public typealias BaseStyle = ExampleStringStyle
     public typealias ParagraphStyle = ExampleStringStyle
 }
