@@ -1,0 +1,98 @@
+excluded:
+  - Carthage
+
+disabled_rules:
+  - trailing_comma
+
+opt_in_rules:
+  - array_init
+  - attributes
+  - closure_body_length
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - conditional_returns_on_newline
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - convenience_type
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - enum_case_associated_values_count
+  - explicit_init
+  - fallthrough
+  - fatal_error_message
+  - file_name
+  - file_types_order
+  - first_where
+  - flatmap_over_map_reduce
+  - force_unwrapping
+  - identical_operands
+  - implicit_return
+  - indentation_width
+  - inert_defer
+  - joined_default_parameter
+  - legacy_multiple
+  - legacy_random
+  - literal_expression_end_indentation
+  - multiline_arguments
+  - multiline_literal_brackets
+  - multiline_parameters_brackets
+  - no_space_in_method_call
+  - operator_usage_whitespace
+  - optional_enum_case_matching
+  - orphaned_doc_comment
+  - overridden_super_call
+  - override_in_extension
+  - pattern_matching_keywords
+  - prefer_self_type_over_type_of_self
+  - prefixed_toplevel_constant
+  - private_action
+  - prohibited_nan_comparison
+  - prohibited_super_call
+  - quick_discouraged_call
+  - quick_discouraged_focused_test
+  - quick_discouraged_pending_test
+  - reduce_into
+  - redundant_nil_coalescing
+  - redundant_objc_attribute
+  - required_enum_case
+  - return_value_from_void_function
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - strict_fileprivate
+  - switch_case_on_newline
+  - toggle_bool
+  - tuple_pattern
+  - type_contents_order
+  - unneeded_parentheses_in_closure_argument
+  - untyped_error_in_catch
+  - vertical_parameter_alignment_on_call
+  - void_function_in_ternary
+  - yoda_condition
+
+analyzer_rules:
+  - unused_import
+  - unused_declaration
+
+line_length: 140
+identifier_name:
+  min_length:
+    warning: 2
+    error: 1
+  max_length:
+    warning: 24
+    error: 32
+cyclomatic_complexity:
+  error: 30
+deployment_target:
+  iOS_deployment_target: 12.0
+empty_count:
+  only_after_dot: true
