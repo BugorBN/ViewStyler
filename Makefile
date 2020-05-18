@@ -8,8 +8,7 @@ bootstrap: homebrew
 
 ## deps: Bootstrap swift dependencies
 deps:
-	mint run carthage/carthage carthage bootstrap --cache-builds --platform ios --no-use-binaries
-
+	mint run carthage/carthage carthage build --no-skip-current 
 
 ## homebrew: Bootstrap Homebrew dependencies
 homebrew: $(BREW)
