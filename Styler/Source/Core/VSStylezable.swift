@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol VSStylezable {}
+public protocol VSStylezable {}
 
-extension VSStylezable where Self: VSView {
+public extension VSStylezable where Self: VSView {
     var styler: VSStyleProvider<Self> {
         VSStyleProvider(view: self)
     }

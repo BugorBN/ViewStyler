@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol VSView: AnyObject {}
+public protocol VSView: AnyObject {}

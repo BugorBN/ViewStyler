@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension VSStyleProvider where View: VSTextView {
+public extension VSStyleProvider where View: VSTextView {
     @discardableResult
     func add(url: String, for linkSubstring: String) -> VSStyleProvider<View> {
         guard let url = URL(string: url) else {

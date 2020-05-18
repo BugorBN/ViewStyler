@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol VSTextView: VSTextHolderView {
+public protocol VSTextView: VSTextHolderView {
     associatedtype FontStyle: VSTextBaseStyle
     associatedtype ParagraphStyle: VSTextParagraphStyle
 }

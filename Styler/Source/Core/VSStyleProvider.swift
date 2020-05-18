@@ -8,7 +8,7 @@
 
 import Foundation
 
-class VSStyleProvider<View: VSView> {
+public class VSStyleProvider<View: VSView> {
     let view: View
 
     init(view: View) {

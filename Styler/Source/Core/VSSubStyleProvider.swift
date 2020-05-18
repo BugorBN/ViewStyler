@@ -8,4 +8,4 @@
 
 import Foundation
 
-class VSSubStyleProvider<View: VSView>: VSStyleProvider<View> {}
+public class VSSubStyleProvider<View: VSView>: VSStyleProvider<View> {}

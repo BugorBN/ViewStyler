@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol VSTextParagraphStyle {
+public protocol VSTextParagraphStyle {
     var paragraphSpacing: CGFloat { get }
 }

@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol VSTextHolderView: VSView {
+public protocol VSTextHolderView: VSView {
     var holderedText: NSAttributedString? { get set }
 }
 
-extension VSTextHolderView {
+public extension VSTextHolderView {
     func addAttribute(_ key: NSAttributedString.Key, value: Any) {
         holderedText = holderedText?.add(key, value: value)
     }

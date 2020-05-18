@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol VSTextBaseStyle {
+public protocol VSTextBaseStyle {
     var font: UIFont { get }
     var color: UIColor? { get }
     var underlineStyle: NSUnderlineStyle? { get }
     var letterSpacing: CGFloat? { get }
 }
 
-extension VSTextBaseStyle {
+public extension VSTextBaseStyle {
     var color: UIColor? { nil }
     var underlineStyle: NSUnderlineStyle? { nil }
     var letterSpacing: CGFloat? { nil }

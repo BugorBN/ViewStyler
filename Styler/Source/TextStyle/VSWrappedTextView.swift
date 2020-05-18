@@ -8,13 +8,13 @@
 
 import Foundation
 
-class VSWrappedTextView<View: VSTextView>: VSTextView {
-    typealias FontStyle = View.FontStyle
-    typealias ParagraphStyle = View.ParagraphStyle
+public class VSWrappedTextView<View: VSTextView>: VSTextView {
+    public typealias FontStyle = View.FontStyle
+    public typealias ParagraphStyle = View.ParagraphStyle
 
-    var holderedText: NSAttributedString?
+    public var holderedText: NSAttributedString?
 
-    init(string: String) {
+    public init(string: String) {
         holderedText = NSAttributedString(string: string)
     }
 }

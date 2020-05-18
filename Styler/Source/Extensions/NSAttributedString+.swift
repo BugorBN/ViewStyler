@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSAttributedString {
+public extension NSAttributedString {
     var range: NSRange {
         NSRange(location: 0, length: string.utf16.count)
     }
