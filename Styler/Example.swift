@@ -31,3 +31,8 @@ extension UIButton: VSButton {
     public typealias BaseStyle = ExampleStringStyle
     public typealias ParagraphStyle = ExampleStringStyle
 }
+
+extension UITextField: VSTextField {
+    public typealias BaseStyle = ExampleStringStyle
+    public typealias ParagraphStyle = ExampleStringStyle
+}

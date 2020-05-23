@@ -8,7 +8,16 @@
 
 import UIKit
 
-extension UITextField: VSTextFieldHolderView, VSStylezable {
+extension UITextField: VSTextHolderView, VSTextFieldHolderView, VSStylezable {
+    public var holderedText: NSAttributedString? {
+        get {
+            attributedText
+        }
+        set {
+            attributedText = newValue
+        }
+    }
+
     public var holderedEditingTextAttributes: [NSAttributedString.Key : Any] {
         get {
             defaultTextAttributes

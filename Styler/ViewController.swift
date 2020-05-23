@@ -35,5 +35,21 @@ class ViewController: UIViewController {
                     .add(fontStyle: .h1)
                     .add(color: .darkGray)
             }
+
+        let textField = UITextField()
+        textField.styler
+            .set(text: "Text")
+            .add(fontStyle: .h1)
+            .add(letterSpacing: 40)
+            .placeholder { substyler in
+                substyler
+                    .set(text: "Placeholder")
+                    .add(color: .brown)
+
+            }
+            .editingAttributes { substyler in
+                substyler.add(fontStyle: .h1)
+                    .add(color: .brown)
+            }
     }
 }
