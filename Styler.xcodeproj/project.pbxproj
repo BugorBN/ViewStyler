@@ -31,6 +31,8 @@
 		50519CBC24730FF800F26526 /* VSStyleProvider+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C9A247306CF00F26526 /* VSStyleProvider+URL.swift */; };
 		50519CBD24730FF800F26526 /* VSStyleProvider+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C9C247307C800F26526 /* VSStyleProvider+Text.swift */; };
 		50519CBE24730FFC00F26526 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8E247170E800F26526 /* UILabel+.swift */; };
+		50519CC924731ABE00F26526 /* UITextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519CC724731ABC00F26526 /* UITextView+.swift */; };
+		50519CD8247327AB00F26526 /* VSControlStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519CD62473278000F26526 /* VSControlStyleProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,17 @@
 		50519CA324730FCE00F26526 /* ViewStyler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewStyler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50519CA524730FCE00F26526 /* ViewStyler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewStyler.h; sourceTree = "<group>"; };
 		50519CA624730FCE00F26526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50519CC724731ABC00F26526 /* UITextView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+.swift"; sourceTree = "<group>"; };
+		50519CCE247326F500F26526 /* UIStyler+UIControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStyler+UIControl.swift"; sourceTree = "<group>"; };
+		50519CCF247326F500F26526 /* UIControlStyleProvider+UIStylezable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControlStyleProvider+UIStylezable.swift"; sourceTree = "<group>"; };
+		50519CD0247326F500F26526 /* StatableStringableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatableStringableView.swift; sourceTree = "<group>"; };
+		50519CD1247326F500F26526 /* UIControlStyleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlStyleProvider.swift; sourceTree = "<group>"; };
+		50519CD62473278000F26526 /* VSControlStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSControlStyleProvider.swift; sourceTree = "<group>"; };
+		50519CDA24732A4E00F26526 /* UIButton+UIStylezable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+UIStylezable.swift"; sourceTree = "<group>"; };
+		50519CDB24732A4E00F26526 /* UIButton+StatableStringableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+StatableStringableView.swift"; sourceTree = "<group>"; };
+		50519CDC24732A4E00F26526 /* UIButtonHighlighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonHighlighter.swift; sourceTree = "<group>"; };
+		50519CDD24732A4E00F26526 /* UIStyler+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStyler+UIButton.swift"; sourceTree = "<group>"; };
+		50519CDE24732A4E00F26526 /* UIButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +146,9 @@
 				50519C8724716F4200F26526 /* Extensions */,
 				50519C8224716E5000F26526 /* TextStyle */,
 				50519C68247058FE00F26526 /* UILabel */,
+				50519CC024731A9000F26526 /* UITextView */,
+				50519CCD247326F500F26526 /* UIControl */,
+				50519CD924732A4E00F26526 /* UIButton */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -152,6 +168,7 @@
 				50519C7E24716D9E00F26526 /* VSStylezable.swift */,
 				50519C8024716DC500F26526 /* VSStyleProvider.swift */,
 				50519C962472FF1800F26526 /* VSSubStyleProvider.swift */,
+				50519CD62473278000F26526 /* VSControlStyleProvider.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -195,6 +212,37 @@
 				50519CA624730FCE00F26526 /* Info.plist */,
 			);
 			path = ViewStyler;
+			sourceTree = "<group>";
+		};
+		50519CC024731A9000F26526 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				50519CC724731ABC00F26526 /* UITextView+.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		50519CCD247326F500F26526 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				50519CCE247326F500F26526 /* UIStyler+UIControl.swift */,
+				50519CCF247326F500F26526 /* UIControlStyleProvider+UIStylezable.swift */,
+				50519CD0247326F500F26526 /* StatableStringableView.swift */,
+				50519CD1247326F500F26526 /* UIControlStyleProvider.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		50519CD924732A4E00F26526 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				50519CDA24732A4E00F26526 /* UIButton+UIStylezable.swift */,
+				50519CDB24732A4E00F26526 /* UIButton+StatableStringableView.swift */,
+				50519CDC24732A4E00F26526 /* UIButtonHighlighter.swift */,
+				50519CDD24732A4E00F26526 /* UIStyler+UIButton.swift */,
+				50519CDE24732A4E00F26526 /* UIButtonStyle.swift */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,11 +368,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50519CD8247327AB00F26526 /* VSControlStyleProvider.swift in Sources */,
 				50519CB724730FF800F26526 /* VSTextHolderView.swift in Sources */,
 				50519CB424730FEE00F26526 /* NSAttributedString+.swift in Sources */,
 				50519CB024730FEB00F26526 /* VSView.swift in Sources */,
 				50519CB224730FEB00F26526 /* VSStyleProvider.swift in Sources */,
 				50519CB324730FEB00F26526 /* VSSubStyleProvider.swift in Sources */,
+				50519CC924731ABE00F26526 /* UITextView+.swift in Sources */,
 				50519CB524730FF500F26526 /* VSTextBaseStyle.swift in Sources */,
 				50519CB924730FF800F26526 /* VSWrappedTextView.swift in Sources */,
 				50519CB124730FEB00F26526 /* VSStylezable.swift in Sources */,

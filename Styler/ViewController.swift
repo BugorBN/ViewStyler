@@ -18,11 +18,22 @@ class ViewController: UIViewController {
             .add(fontStyle: .h1)
             .add(substring: "Test text") { styler in
                 styler
-                    .add(color: .red)
                     .add(fontStyle: .h2)
+                    .add(color: .red)
             }
             .add(letterSpacing: 10)
         
-        // Do any additional setup after loading the view.
+        let button = UIButton()
+        button.styler
+            .configure(state: .normal) { styler in
+                styler.set(text: "normal")
+                    .add(fontStyle: .h1)
+                    .add(color: .magenta)
+            }
+            .configure(state: .highlighted) { styler in
+                styler.set(text: "highlighted")
+                    .add(fontStyle: .h1)
+                    .add(color: .darkGray)
+            }
     }
 }

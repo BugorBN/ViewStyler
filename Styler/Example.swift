@@ -26,3 +26,8 @@ extension UILabel: VSTextView {
     public typealias BaseStyle = ExampleStringStyle
     public typealias ParagraphStyle = ExampleStringStyle
 }
+
+extension UIButton: VSButton {
+    public typealias BaseStyle = ExampleStringStyle
+    public typealias ParagraphStyle = ExampleStringStyle
+}
