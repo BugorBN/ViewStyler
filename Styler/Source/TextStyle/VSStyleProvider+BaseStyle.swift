@@ -10,7 +10,7 @@ import UIKit
 
 public extension VSStyleProvider where View: VSStringView {
     @discardableResult
-    func add(fontStyle: View.BaseStyle) -> VSStyleProvider<View> {
+    func add(fontStyle: View.TextStyle) -> VSStyleProvider<View> {
         add(font: fontStyle.font)
 
         if let color = fontStyle.color {

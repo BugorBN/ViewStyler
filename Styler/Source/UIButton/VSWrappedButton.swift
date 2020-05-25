@@ -9,8 +9,7 @@
 import Foundation
 
 public class VSWrappedButton<View: VSButton>: VSWrappedControl<View>, VSStringView {
-    public typealias BaseStyle = View.BaseStyle
-    public typealias ParagraphStyle = View.ParagraphStyle
+    public typealias TextStyle = View.TextStyle
 
     public var holderedText: NSAttributedString? {
         get {

@@ -24,7 +24,7 @@ public extension VSStyleProvider where View: VSStringView {
     }
 
     @discardableResult
-    func add(paragraphStyle: View.ParagraphStyle) -> VSStyleProvider<View> {
+    func add(paragraphStyle: View.TextStyle) -> VSStyleProvider<View> {
         if let paragraphSpacing = paragraphStyle.paragraphSpacing {
             add(paragraphSpacing: paragraphSpacing)
         }

@@ -9,8 +9,7 @@
 import Foundation
 
 public class VSWrappedStringView<View: VSStringView>: VSStringView {
-    public typealias BaseStyle = View.BaseStyle
-    public typealias ParagraphStyle = View.ParagraphStyle
+    public typealias TextStyle = View.TextStyle
 
     public var holderedText: NSAttributedString?
 

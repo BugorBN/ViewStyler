@@ -9,6 +9,5 @@
 import Foundation
 
 public protocol VSStringView: VSStringHolderView {
-    associatedtype BaseStyle: VSTextBaseStyle
-    associatedtype ParagraphStyle: VSTextParagraphStyle
+    associatedtype TextStyle: VSTextBaseStyle & VSTextParagraphStyle
 }

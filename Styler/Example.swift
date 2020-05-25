@@ -23,16 +23,13 @@ public enum ExampleStringStyle: VSTextBaseStyle, VSTextParagraphStyle {
 }
 
 extension UILabel: VSStringView {
-    public typealias BaseStyle = ExampleStringStyle
-    public typealias ParagraphStyle = ExampleStringStyle
+    public typealias TextStyle = ExampleStringStyle
 }
 
 extension UIButton: VSButton {
-    public typealias BaseStyle = ExampleStringStyle
-    public typealias ParagraphStyle = ExampleStringStyle
+    public typealias TextStyle = ExampleStringStyle
 }
 
 extension UITextField: VSTextField {
-    public typealias BaseStyle = ExampleStringStyle
-    public typealias ParagraphStyle = ExampleStringStyle
+    public typealias TextStyle = ExampleStringStyle
 }

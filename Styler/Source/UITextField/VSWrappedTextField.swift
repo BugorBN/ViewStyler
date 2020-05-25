@@ -14,8 +14,7 @@ public class VSWrappedTextField<View: VSTextField>: VSStringView, VSControl {
         case placeholder
     }
 
-    public typealias BaseStyle = View.BaseStyle
-    public typealias ParagraphStyle = View.ParagraphStyle
+    public typealias TextStyle = View.TextStyle
 
     public let view: View
     public let state: State

@@ -9,6 +9,5 @@
 import Foundation
 
 public protocol VSButton: VSButtonHolderView {
-    associatedtype BaseStyle: VSTextBaseStyle
-    associatedtype ParagraphStyle: VSTextParagraphStyle
+    associatedtype TextStyle: VSTextBaseStyle & VSTextParagraphStyle
 }
