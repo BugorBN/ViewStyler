@@ -54,3 +54,7 @@ extension UIButton: VSBaseView, VSButton {
 extension UITextField: VSTextField {
     public typealias TextStyle = ExampleStringStyle
 }
+
+extension UITextView: VSTextView {
+    public typealias TextStyle = ExampleStringStyle
+}

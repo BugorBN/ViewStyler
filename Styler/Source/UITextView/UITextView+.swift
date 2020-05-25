@@ -8,7 +8,16 @@
 
 import UIKit
 
-extension UITextView: VSStringHolderView, VSStylezable {
+extension UITextView: VSTextHolderView, VSStringHolderView, VSStylezable {
+    public var holderedLinkTextAttributes: [NSAttributedString.Key : Any] {
+        get {
+            linkTextAttributes ?? [:]
+        }
+        set {
+            linkTextAttributes = newValue
+        }
+    }
+
     public var holderedText: NSAttributedString? {
         get {
             if let attributedText = attributedText {
@@ -24,4 +33,3 @@ extension UITextView: VSStringHolderView, VSStylezable {
         }
     }
 }
-

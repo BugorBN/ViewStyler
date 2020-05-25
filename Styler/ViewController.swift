@@ -52,5 +52,13 @@ class ViewController: UIViewController {
                 substyler.add(fontStyle: .h1)
                     .add(color: .brown)
             }
+
+        let textView = UITextView()
+        textView.styler
+            .set(text: "Text")
+            .add(fontStyle: .h1)
+            .linkAttributes { styler in
+                styler.add(color: .red)
+            }
     }
 }
