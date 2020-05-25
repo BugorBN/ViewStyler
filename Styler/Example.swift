@@ -22,11 +22,32 @@ public enum ExampleStringStyle: VSTextBaseStyle, VSTextParagraphStyle {
     }
 }
 
+public enum ExampleBaseStyle: VSBaseStyle {
+    case `default`
+
+    public var backgroundColor: UIColor?? {
+        return .blue
+    }
+
+    public var cornerRadius: CGFloat? {
+        return 10
+    }
+
+    public var borderWidth: CGFloat? {
+        return 1
+    }
+
+    public var borderColor: UIColor?? {
+        return .black
+    }
+}
+
 extension UILabel: VSStringView {
     public typealias TextStyle = ExampleStringStyle
 }
 
-extension UIButton: VSButton {
+extension UIButton: VSBaseView, VSButton {
+    public typealias BaseStyle = ExampleBaseStyle
     public typealias TextStyle = ExampleStringStyle
 }
 

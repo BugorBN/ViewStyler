@@ -10,7 +10,7 @@ import Foundation
 
 public protocol VSStylezable {}
 
-public extension VSStylezable where Self: VSView {
+public extension VSStylezable where Self: VSItem {
     var styler: VSStyleProvider<Self> {
         VSStyleProvider(view: self)
     }

@@ -1,5 +1,5 @@
 //
-//  VSView.swift
+//  VSItem.swift
 //  Styler
 //
 //  Created by basalaev on 17.05.2020.
@@ -8,4 +8,4 @@
 
 import Foundation
 
-public protocol VSView: AnyObject {}
+public protocol VSItem: AnyObject {}

@@ -22,9 +22,10 @@ class ViewController: UIViewController {
                     .add(color: .red)
             }
             .add(letterSpacing: 10)
-        
+
         let button = UIButton()
         button.styler
+            .set(baseStyle: .default)
             .configure(state: .normal) { styler in
                 styler.set(text: "normal")
                     .add(fontStyle: .h1)

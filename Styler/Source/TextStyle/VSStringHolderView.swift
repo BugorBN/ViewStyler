@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol VSStringHolderView: VSView {
+public protocol VSStringHolderView: VSItem {
     var holderedText: NSAttributedString? { get set }
 }
 

@@ -8,4 +8,4 @@
 
 import UIKit
 
-public protocol VSControl: VSView {}
+public protocol VSControl: VSItem {}

@@ -16,7 +16,7 @@
 		50519C7A2470648900F26526 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C792470648900F26526 /* Example.swift */; };
 		50519CA724730FCE00F26526 /* ViewStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = 50519CA524730FCE00F26526 /* ViewStyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50519CAA24730FCE00F26526 /* ViewStyler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50519CA324730FCE00F26526 /* ViewStyler.framework */; };
-		50519CB024730FEB00F26526 /* VSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C7B24716D6700F26526 /* VSView.swift */; };
+		50519CB024730FEB00F26526 /* VSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C7B24716D6700F26526 /* VSItem.swift */; };
 		50519CB124730FEB00F26526 /* VSStylezable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C7E24716D9E00F26526 /* VSStylezable.swift */; };
 		50519CB224730FEB00F26526 /* VSStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8024716DC500F26526 /* VSStyleProvider.swift */; };
 		50519CB324730FEB00F26526 /* VSSubStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C962472FF1800F26526 /* VSSubStyleProvider.swift */; };
@@ -44,6 +44,7 @@
 		5097F478247960D700143A26 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5097F476247960B500143A26 /* UITextField+.swift */; };
 		5097F47B2479612700143A26 /* VSWrappedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5097F4792479610600143A26 /* VSWrappedTextField.swift */; };
 		5097F47E247961CD00143A26 /* VSStyleProvider+VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5097F47C2479616000143A26 /* VSStyleProvider+VSTextField.swift */; };
+		5097F48C247C1F3F00143A26 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5097F48B247C1F3F00143A26 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		50519C572470589F00F26526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50519C592470589F00F26526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50519C792470648900F26526 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
-		50519C7B24716D6700F26526 /* VSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSView.swift; sourceTree = "<group>"; };
+		50519C7B24716D6700F26526 /* VSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSItem.swift; sourceTree = "<group>"; };
 		50519C7E24716D9E00F26526 /* VSStylezable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStylezable.swift; sourceTree = "<group>"; };
 		50519C8024716DC500F26526 /* VSStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStyleProvider.swift; sourceTree = "<group>"; };
 		50519C8324716E8D00F26526 /* VSStringHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStringHolderView.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		5097F476247960B500143A26 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		5097F4792479610600143A26 /* VSWrappedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSWrappedTextField.swift; sourceTree = "<group>"; };
 		5097F47C2479616000143A26 /* VSStyleProvider+VSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+VSTextField.swift"; sourceTree = "<group>"; };
+		5097F48B247C1F3F00143A26 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				50519C7D24716D7200F26526 /* Core */,
 				50519C8724716F4200F26526 /* Extensions */,
 				50519C8224716E5000F26526 /* TextStyle */,
+				5097F48A247C1E8400143A26 /* UIView */,
 				50519C68247058FE00F26526 /* UILabel */,
 				50519CC024731A9000F26526 /* UITextView */,
 				50519CCD247326F500F26526 /* UIControl */,
@@ -178,7 +181,7 @@
 		50519C7D24716D7200F26526 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				50519C7B24716D6700F26526 /* VSView.swift */,
+				50519C7B24716D6700F26526 /* VSItem.swift */,
 				50519C7E24716D9E00F26526 /* VSStylezable.swift */,
 				50519C8024716DC500F26526 /* VSStyleProvider.swift */,
 				50519C962472FF1800F26526 /* VSSubStyleProvider.swift */,
@@ -266,6 +269,14 @@
 				5097F47C2479616000143A26 /* VSStyleProvider+VSTextField.swift */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		5097F48A247C1E8400143A26 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				5097F48B247C1F3F00143A26 /* UIView+.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +406,8 @@
 				5097F478247960D700143A26 /* UITextField+.swift in Sources */,
 				5097F45F24795DB200143A26 /* VSButton.swift in Sources */,
 				50519CB424730FEE00F26526 /* NSAttributedString+.swift in Sources */,
-				50519CB024730FEB00F26526 /* VSView.swift in Sources */,
+				5097F48C247C1F3F00143A26 /* UIView+.swift in Sources */,
+				50519CB024730FEB00F26526 /* VSItem.swift in Sources */,
 				50519CB224730FEB00F26526 /* VSStyleProvider.swift in Sources */,
 				5097F46724795E4C00143A26 /* VSStyleProvider+VSButton.swift in Sources */,
 				50519CB324730FEB00F26526 /* VSSubStyleProvider.swift in Sources */,
