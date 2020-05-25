@@ -11,7 +11,13 @@ import UIKit
 extension UITextView: VSStringHolderView, VSStylezable {
     public var holderedText: NSAttributedString? {
         get {
-            return attributedText
+            if let attributedText = attributedText {
+                return attributedText
+            } else if let text = text {
+                return NSAttributedString(string: text)
+            } else {
+                return nil
+            }
         }
         set {
             attributedText = newValue

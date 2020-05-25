@@ -11,7 +11,13 @@ import UIKit
 extension UITextField: VSStringHolderView, VSTextFieldHolderView, VSStylezable {
     public var holderedText: NSAttributedString? {
         get {
-            attributedText
+            if let attributedText = attributedText {
+                return attributedText
+            } else if let text = text {
+                return NSAttributedString(string: text)
+            } else {
+                return nil
+            }
         }
         set {
             attributedText = newValue
