@@ -1,5 +1,5 @@
 //
-//  VSTextHolderView.swift
+//  VSStringHolderView.swift
 //  Styler
 //
 //  Created by basalaev on 17.05.2020.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol VSTextHolderView: VSView {
+public protocol VSStringHolderView: VSView {
     var holderedText: NSAttributedString? { get set }
 }
 
-public extension VSTextHolderView {
+public extension VSStringHolderView {
     func addAttribute(_ key: NSAttributedString.Key, value: Any) {
         holderedText = holderedText?.add(key, value: value)
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension VSStyleProvider where View: VSTextView & UIView {
+public extension VSStyleProvider where View: VSStringView & UIView {
     @discardableResult
     func hideViewIfEmpty() -> VSStyleProvider<View> {
         view.isHidden = view.holderedText == nil || (view.holderedText?.string.isEmpty != false)
@@ -16,14 +16,14 @@ public extension VSStyleProvider where View: VSTextView & UIView {
     }
 }
 
-public extension VSStyleProvider where View: VSTextView {
+public extension VSStyleProvider where View: VSStringView {
     @discardableResult
-    func add(substring: String?, configure: ((VSStyleProvider<VSWrappedTextView<View>>) -> Void)? = nil) -> VSStyleProvider<View> {
+    func add(substring: String?, configure: ((VSStyleProvider<VSWrappedStringView<View>>) -> Void)? = nil) -> VSStyleProvider<View> {
         guard let substring = substring else {
             return self
         }
 
-        let wrappedView = VSWrappedTextView<View>(string: substring)
+        let wrappedView = VSWrappedStringView<View>(string: substring)
         configure?(VSSubStyleProvider(view: wrappedView))
 
         guard let substringAS = wrappedView.holderedText else {

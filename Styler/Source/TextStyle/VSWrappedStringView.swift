@@ -1,5 +1,5 @@
 //
-//  VSWrappedTextView.swift
+//  VSWrappedStringView.swift
 //  Styler
 //
 //  Created by basalaev on 18.05.2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class VSWrappedTextView<View: VSTextView>: VSTextView {
+public class VSWrappedStringView<View: VSStringView>: VSStringView {
     public typealias BaseStyle = View.BaseStyle
     public typealias ParagraphStyle = View.ParagraphStyle
 

@@ -23,9 +23,9 @@
 		50519CB424730FEE00F26526 /* NSAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8824716F8400F26526 /* NSAttributedString+.swift */; };
 		50519CB524730FF500F26526 /* VSTextBaseStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8B24716FD200F26526 /* VSTextBaseStyle.swift */; };
 		50519CB624730FF500F26526 /* VSTextParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C90247173CC00F26526 /* VSTextParagraphStyle.swift */; };
-		50519CB724730FF800F26526 /* VSTextHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8324716E8D00F26526 /* VSTextHolderView.swift */; };
-		50519CB824730FF800F26526 /* VSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8524716F0100F26526 /* VSTextView.swift */; };
-		50519CB924730FF800F26526 /* VSWrappedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C942472FEAC00F26526 /* VSWrappedTextView.swift */; };
+		50519CB724730FF800F26526 /* VSStringHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8324716E8D00F26526 /* VSStringHolderView.swift */; };
+		50519CB824730FF800F26526 /* VSStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C8524716F0100F26526 /* VSStringView.swift */; };
+		50519CB924730FF800F26526 /* VSWrappedStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C942472FEAC00F26526 /* VSWrappedStringView.swift */; };
 		50519CBA24730FF800F26526 /* VSStyleProvider+ParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C92247179A400F26526 /* VSStyleProvider+ParagraphStyle.swift */; };
 		50519CBB24730FF800F26526 /* VSStyleProvider+BaseStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C98247303D100F26526 /* VSStyleProvider+BaseStyle.swift */; };
 		50519CBC24730FF800F26526 /* VSStyleProvider+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C9A247306CF00F26526 /* VSStyleProvider+URL.swift */; };
@@ -69,14 +69,14 @@
 		50519C7B24716D6700F26526 /* VSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSView.swift; sourceTree = "<group>"; };
 		50519C7E24716D9E00F26526 /* VSStylezable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStylezable.swift; sourceTree = "<group>"; };
 		50519C8024716DC500F26526 /* VSStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStyleProvider.swift; sourceTree = "<group>"; };
-		50519C8324716E8D00F26526 /* VSTextHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSTextHolderView.swift; sourceTree = "<group>"; };
-		50519C8524716F0100F26526 /* VSTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSTextView.swift; sourceTree = "<group>"; };
+		50519C8324716E8D00F26526 /* VSStringHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStringHolderView.swift; sourceTree = "<group>"; };
+		50519C8524716F0100F26526 /* VSStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStringView.swift; sourceTree = "<group>"; };
 		50519C8824716F8400F26526 /* NSAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
 		50519C8B24716FD200F26526 /* VSTextBaseStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSTextBaseStyle.swift; sourceTree = "<group>"; };
 		50519C8E247170E800F26526 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		50519C90247173CC00F26526 /* VSTextParagraphStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSTextParagraphStyle.swift; sourceTree = "<group>"; };
 		50519C92247179A400F26526 /* VSStyleProvider+ParagraphStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+ParagraphStyle.swift"; sourceTree = "<group>"; };
-		50519C942472FEAC00F26526 /* VSWrappedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSWrappedTextView.swift; sourceTree = "<group>"; };
+		50519C942472FEAC00F26526 /* VSWrappedStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSWrappedStringView.swift; sourceTree = "<group>"; };
 		50519C962472FF1800F26526 /* VSSubStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSSubStyleProvider.swift; sourceTree = "<group>"; };
 		50519C98247303D100F26526 /* VSStyleProvider+BaseStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+BaseStyle.swift"; sourceTree = "<group>"; };
 		50519C9A247306CF00F26526 /* VSStyleProvider+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+URL.swift"; sourceTree = "<group>"; };
@@ -190,9 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				50519C8A24716FBF00F26526 /* Styles */,
-				50519C8324716E8D00F26526 /* VSTextHolderView.swift */,
-				50519C8524716F0100F26526 /* VSTextView.swift */,
-				50519C942472FEAC00F26526 /* VSWrappedTextView.swift */,
+				50519C8324716E8D00F26526 /* VSStringHolderView.swift */,
+				50519C8524716F0100F26526 /* VSStringView.swift */,
+				50519C942472FEAC00F26526 /* VSWrappedStringView.swift */,
 				50519C92247179A400F26526 /* VSStyleProvider+ParagraphStyle.swift */,
 				50519C98247303D100F26526 /* VSStyleProvider+BaseStyle.swift */,
 				50519C9A247306CF00F26526 /* VSStyleProvider+URL.swift */,
@@ -391,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50519CB724730FF800F26526 /* VSTextHolderView.swift in Sources */,
+				50519CB724730FF800F26526 /* VSStringHolderView.swift in Sources */,
 				5097F478247960D700143A26 /* UITextField+.swift in Sources */,
 				5097F45F24795DB200143A26 /* VSButton.swift in Sources */,
 				50519CB424730FEE00F26526 /* NSAttributedString+.swift in Sources */,
@@ -404,11 +404,11 @@
 				5097F47E247961CD00143A26 /* VSStyleProvider+VSTextField.swift in Sources */,
 				5097F4722479603200143A26 /* VSTextFieldHolderView.swift in Sources */,
 				50519CB524730FF500F26526 /* VSTextBaseStyle.swift in Sources */,
-				50519CB924730FF800F26526 /* VSWrappedTextView.swift in Sources */,
+				50519CB924730FF800F26526 /* VSWrappedStringView.swift in Sources */,
 				50519CB124730FEB00F26526 /* VSStylezable.swift in Sources */,
 				5097F46224795DCB00143A26 /* VSWrappedControl.swift in Sources */,
 				50519CBC24730FF800F26526 /* VSStyleProvider+URL.swift in Sources */,
-				50519CB824730FF800F26526 /* VSTextView.swift in Sources */,
+				50519CB824730FF800F26526 /* VSStringView.swift in Sources */,
 				5097F46524795E2100143A26 /* VSWrappedButton.swift in Sources */,
 				5097F45924795D3800143A26 /* VSButtonHolderView.swift in Sources */,
 				5097F4752479608E00143A26 /* VSTextField.swift in Sources */,

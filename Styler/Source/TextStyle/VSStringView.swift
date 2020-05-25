@@ -1,5 +1,5 @@
 //
-//  VSTextView.swift
+//  VSStringView.swift
 //  Styler
 //
 //  Created by basalaev on 17.05.2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol VSTextView: VSTextHolderView {
+public protocol VSStringView: VSStringHolderView {
     associatedtype BaseStyle: VSTextBaseStyle
     associatedtype ParagraphStyle: VSTextParagraphStyle
 }

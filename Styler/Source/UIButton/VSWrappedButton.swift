@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class VSWrappedButton<View: VSButton>: VSWrappedControl<View>, VSTextView {
+public class VSWrappedButton<View: VSButton>: VSWrappedControl<View>, VSStringView {
     public typealias BaseStyle = View.BaseStyle
     public typealias ParagraphStyle = View.ParagraphStyle
 

@@ -8,4 +8,4 @@
 
 import Foundation
 
-public protocol VSTextField: VSTextFieldHolderView, VSTextView {}
+public protocol VSTextField: VSTextFieldHolderView, VSStringView {}

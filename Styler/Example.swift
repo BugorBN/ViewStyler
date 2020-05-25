@@ -22,7 +22,7 @@ public enum ExampleStringStyle: VSTextBaseStyle, VSTextParagraphStyle {
     }
 }
 
-extension UILabel: VSTextView {
+extension UILabel: VSStringView {
     public typealias BaseStyle = ExampleStringStyle
     public typealias ParagraphStyle = ExampleStringStyle
 }

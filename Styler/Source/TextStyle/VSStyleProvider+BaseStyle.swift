@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension VSStyleProvider where View: VSTextView {
+public extension VSStyleProvider where View: VSStringView {
     @discardableResult
     func add(fontStyle: View.BaseStyle) -> VSStyleProvider<View> {
         add(font: fontStyle.font)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextView: VSTextHolderView, VSStylezable {
+extension UITextView: VSStringHolderView, VSStylezable {
     public var holderedText: NSAttributedString? {
         get {
             return attributedText

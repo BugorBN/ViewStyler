@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class VSWrappedTextField<View: VSTextField>: VSTextView, VSControl {
+public class VSWrappedTextField<View: VSTextField>: VSStringView, VSControl {
     public enum State {
         case editing
         case placeholder

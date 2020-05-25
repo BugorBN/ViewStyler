@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension VSStyleProvider where View: VSTextView {
+public extension VSStyleProvider where View: VSStringView {
     var paragraph: NSMutableParagraphStyle {
         let paragraph = NSMutableParagraphStyle()
 
