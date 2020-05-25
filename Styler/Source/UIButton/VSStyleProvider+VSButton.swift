@@ -11,7 +11,7 @@ import UIKit
 public extension VSStyleProvider where View: VSButton {
     @discardableResult
     func configure(state: UIControl.State, configurator: @escaping (VSStyleProvider<VSWrappedButton<View>>) -> Void) -> VSStyleProvider<View> {
-        configurator(VSSubStyleProvider(view: VSWrappedButton(view: view, state: state)))
+        configurator(VSInnerStyleProvider(view: VSWrappedButton(view: view, state: state)))
         return self
     }
 }

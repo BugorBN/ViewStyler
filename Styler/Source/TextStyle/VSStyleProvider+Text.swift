@@ -24,7 +24,7 @@ public extension VSStyleProvider where View: VSStringView {
         }
 
         let wrappedView = VSWrappedStringView<View>(string: substring)
-        configure?(VSSubStyleProvider(view: wrappedView))
+        configure?(VSInnerStyleProvider(view: wrappedView))
 
         guard let substringAS = wrappedView.holderedText else {
             return self

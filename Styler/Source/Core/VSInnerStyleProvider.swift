@@ -1,5 +1,5 @@
 //
-//  VSSubStyleProvider.swift
+//  VSInnerStyleProvider.swift
 //  Styler
 //
 //  Created by basalaev on 18.05.2020.
@@ -8,4 +8,4 @@
 
 import Foundation
 
-public class VSSubStyleProvider<View: VSItem>: VSStyleProvider<View> {}
+public class VSInnerStyleProvider<View: VSItem>: VSStyleProvider<View> {}
