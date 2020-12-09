@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let title = "Привет".style { styler in
+            styler
+                .add(fontStyle: .h1)
+                .add(letterSpacing: 40)
+        }
+
         let label = UILabel()
         label.styler
             .add(fontStyle: .h1)
