@@ -58,3 +58,7 @@ extension UITextField: VSTextField {
 extension UITextView: VSTextView {
     public typealias TextStyle = ExampleStringStyle
 }
+
+extension String: VSStringStylable {
+    public typealias TextStyle = ExampleStringStyle
+}

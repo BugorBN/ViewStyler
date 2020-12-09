@@ -8,6 +8,4 @@
 
 import Foundation
 
-public protocol VSStringView: VSStringHolderView {
-    associatedtype TextStyle: VSTextBaseStyle & VSTextParagraphStyle
-}
+public typealias VSStringView = VSStringStylable & VSStringHolderView

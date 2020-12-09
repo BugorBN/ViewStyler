@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500F5421258104B700ED3EBD /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F541B2581048E00ED3EBD /* String+.swift */; };
+		500F54342581108B00ED3EBD /* VSStringStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F54282581102A00ED3EBD /* VSStringStylable.swift */; };
 		50519C4C2470589E00F26526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C4B2470589E00F26526 /* AppDelegate.swift */; };
 		50519C4E2470589E00F26526 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C4D2470589E00F26526 /* SceneDelegate.swift */; };
 		50519C502470589E00F26526 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C4F2470589E00F26526 /* ViewController.swift */; };
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		500F541B2581048E00ED3EBD /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		500F54282581102A00ED3EBD /* VSStringStylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSStringStylable.swift; sourceTree = "<group>"; };
 		50519C482470589E00F26526 /* Styler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50519C4B2470589E00F26526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50519C4D2470589E00F26526 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500F541A2581046D00ED3EBD /* String */ = {
+			isa = PBXGroup;
+			children = (
+				500F541B2581048E00ED3EBD /* String+.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		50519C3F2470589E00F26526 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +188,7 @@
 				50519C7D24716D7200F26526 /* Core */,
 				50519C8724716F4200F26526 /* Extensions */,
 				50519C8224716E5000F26526 /* TextStyle */,
+				500F541A2581046D00ED3EBD /* String */,
 				5097F48A247C1E8400143A26 /* UIView */,
 				50519C68247058FE00F26526 /* UILabel */,
 				50519CC024731A9000F26526 /* UITextView */,
@@ -209,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				50519C8A24716FBF00F26526 /* Styles */,
+				500F54282581102A00ED3EBD /* VSStringStylable.swift */,
 				50519C8324716E8D00F26526 /* VSStringHolderView.swift */,
 				50519C8524716F0100F26526 /* VSStringView.swift */,
 				50519C942472FEAC00F26526 /* VSWrappedStringView.swift */,
@@ -433,6 +447,7 @@
 				5097F45F24795DB200143A26 /* VSButton.swift in Sources */,
 				50519CB424730FEE00F26526 /* NSAttributedString+.swift in Sources */,
 				5097F4A3247C4E3A00143A26 /* VSWrappedTextView.swift in Sources */,
+				500F54342581108B00ED3EBD /* VSStringStylable.swift in Sources */,
 				5097F48C247C1F3F00143A26 /* UIView+.swift in Sources */,
 				50519CB024730FEB00F26526 /* VSItem.swift in Sources */,
 				50519CB224730FEB00F26526 /* VSStyleProvider.swift in Sources */,
@@ -450,6 +465,7 @@
 				50519CB124730FEB00F26526 /* VSStylezable.swift in Sources */,
 				5097F494247C2D1E00143A26 /* VSBaseView.swift in Sources */,
 				5097F46224795DCB00143A26 /* VSWrappedControl.swift in Sources */,
+				500F5421258104B700ED3EBD /* String+.swift in Sources */,
 				50519CBC24730FF800F26526 /* VSStyleProvider+URL.swift in Sources */,
 				50519CB824730FF800F26526 /* VSStringView.swift in Sources */,
 				5097F46524795E2100143A26 /* VSWrappedButton.swift in Sources */,
