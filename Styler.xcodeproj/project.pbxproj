@@ -99,9 +99,6 @@
 		500F552F2581196A00ED3EBD /* VSStringStylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSStringStylable.swift; sourceTree = "<group>"; };
 		500F55302581196A00ED3EBD /* VSStyleProvider+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+URL.swift"; sourceTree = "<group>"; };
 		500F55322581196A00ED3EBD /* NSAttributedString+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
-		500F55342581196A00ED3EBD /* UIStyler+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStyler+UIImageView.swift"; sourceTree = "<group>"; };
-		500F55352581196A00ED3EBD /* UIImageView+UIStylezable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+UIStylezable.swift"; sourceTree = "<group>"; };
-		500F55362581196A00ED3EBD /* UIImageViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewStyle.swift; sourceTree = "<group>"; };
 		500F55382581196A00ED3EBD /* VSWrappedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSWrappedControl.swift; sourceTree = "<group>"; };
 		500F55392581196A00ED3EBD /* VSControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSControl.swift; sourceTree = "<group>"; };
 		500F553B2581196A00ED3EBD /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
@@ -161,7 +158,6 @@
 				500F551F2581196A00ED3EBD /* UITextView */,
 				500F55252581196A00ED3EBD /* TextStyle */,
 				500F55312581196A00ED3EBD /* Extensions */,
-				500F55332581196A00ED3EBD /* UIImageView */,
 				500F55372581196A00ED3EBD /* UIControl */,
 				500F553A2581196A00ED3EBD /* String */,
 				500F553C2581196A00ED3EBD /* UITextField */,
@@ -255,16 +251,6 @@
 				500F55322581196A00ED3EBD /* NSAttributedString+.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		500F55332581196A00ED3EBD /* UIImageView */ = {
-			isa = PBXGroup;
-			children = (
-				500F55342581196A00ED3EBD /* UIStyler+UIImageView.swift */,
-				500F55352581196A00ED3EBD /* UIImageView+UIStylezable.swift */,
-				500F55362581196A00ED3EBD /* UIImageViewStyle.swift */,
-			);
-			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		500F55372581196A00ED3EBD /* UIControl */ = {
