@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextField: VSStringHolderView, VSTextFieldHolderView, VSStylezable {
+extension UITextField: VSStringHolderView, VSTextFieldHolderView {
     public var holderedText: NSAttributedString? {
         get {
             if let attributedText = attributedText {

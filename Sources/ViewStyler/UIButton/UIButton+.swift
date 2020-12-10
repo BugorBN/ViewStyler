@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIButton: VSButtonHolderView, VSStylezable {
+extension UIButton: VSButtonHolderView {
     public func set(holderedText: NSAttributedString?, state: UIControl.State) {
         setAttributedTitle(holderedText, for: state)
     }

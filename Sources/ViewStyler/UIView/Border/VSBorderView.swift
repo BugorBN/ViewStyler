@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol VSBaseView: VSBaseHolderView {
-    associatedtype BaseStyle: VSBaseStyle
+public protocol VSBorderView: VSItem {
+    associatedtype BorderStyle: VSBorderStyle
 }

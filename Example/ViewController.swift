@@ -10,17 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private var firstLabel: UILabel!
+    @IBOutlet private var secondLabel: UILabel!
+    @IBOutlet private var button: UIButton!
+    @IBOutlet private var textField: UITextField!
+    @IBOutlet private var textView: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let title = "Привет".style { styler in
+        firstLabel.attributedText = "Hello World".style { styler in
             styler
                 .add(fontStyle: .h1)
                 .add(letterSpacing: 40)
+                .add(color: .magenta)
         }
 
-        let label = UILabel()
-        label.styler
+        secondLabel.styler
             .add(fontStyle: .h1)
             .add(substring: "Test text") { styler in
                 styler
@@ -29,8 +35,8 @@ class ViewController: UIViewController {
             }
             .add(letterSpacing: 10)
 
-        let button = UIButton()
         button.styler
+            .add(shadowStyle: .default)
             .set(baseStyle: .default)
             .configure(state: .normal) { styler in
                 styler.set(text: "normal")
@@ -43,7 +49,6 @@ class ViewController: UIViewController {
                     .add(color: .darkGray)
             }
 
-        let textField = UITextField()
         textField.styler
             .set(text: "Text")
             .add(fontStyle: .h1)
@@ -59,7 +64,6 @@ class ViewController: UIViewController {
                     .add(color: .brown)
             }
 
-        let textView = UITextView()
         textView.styler
             .set(text: "Text")
             .add(fontStyle: .h1)

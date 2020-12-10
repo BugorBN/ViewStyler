@@ -8,16 +8,14 @@
 
 import UIKit
 
-public protocol VSBaseStyle {
-    var backgroundColor: UIColor?? { get }
+public protocol VSBorderStyle {
     var cornerRadius: CGFloat? { get }
     var borderWidth: CGFloat? { get }
-    var borderColor: UIColor?? { get }
+    var borderColor: UIColor? { get }
 }
 
-public extension VSBaseStyle {
-    var backgroundColor: UIColor?? { nil }
+public extension VSBorderStyle {
+    var backgroundColor: UIColor? { nil }
     var cornerRadius: CGFloat? { nil }
     var borderWidth: CGFloat? { nil }
-    var borderColor: UIColor?? { nil }
 }

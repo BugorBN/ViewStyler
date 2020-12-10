@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UILabel: VSStringHolderView, VSStylezable {
+extension UILabel: VSStringHolderView {
     public var holderedText: NSAttributedString? {
         get {
             if let attributedText = attributedText {

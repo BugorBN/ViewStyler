@@ -22,12 +22,8 @@ public enum ExampleStringStyle: VSTextBaseStyle, VSTextParagraphStyle {
     }
 }
 
-public enum ExampleBaseStyle: VSBaseStyle {
+public enum ExampleBorderStyle: VSBorderStyle {
     case `default`
-
-    public var backgroundColor: UIColor?? {
-        return .blue
-    }
 
     public var cornerRadius: CGFloat? {
         return 10
@@ -37,17 +33,45 @@ public enum ExampleBaseStyle: VSBaseStyle {
         return 1
     }
 
-    public var borderColor: UIColor?? {
+    public var borderColor: UIColor? {
         return .black
     }
+}
+
+public enum ExampleShadowStyle: VSShadowStyle {
+    case `default`
+
+    public var color: UIColor? {
+        .black
+    }
+
+    public var alpha: CGFloat? {
+        0.5
+    }
+
+    public var blur: CGFloat? {
+        10
+    }
+
+    public var offset: CGSize? {
+        .init(width: 0, height: 5)
+    }
+
+    public var spread: CGFloat? {
+        -2
+    }
+}
+
+extension UIView: VSShadowableView {
+    public typealias ShadowStyle = ExampleShadowStyle
 }
 
 extension UILabel: VSStringView {
     public typealias TextStyle = ExampleStringStyle
 }
 
-extension UIButton: VSBaseView, VSButton {
-    public typealias BaseStyle = ExampleBaseStyle
+extension UIButton: VSBorderView, VSButton {
+    public typealias BorderStyle = ExampleBorderStyle
     public typealias TextStyle = ExampleStringStyle
 }
 

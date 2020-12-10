@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextView: VSTextHolderView, VSStringHolderView, VSStylezable {
+extension UITextView: VSTextHolderView, VSStringHolderView {
     public var holderedLinkTextAttributes: [NSAttributedString.Key : Any] {
         get {
             linkTextAttributes ?? [:]

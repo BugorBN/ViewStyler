@@ -9,7 +9,7 @@
 import Foundation
 
 public class VSStyleProvider<View: VSItem> {
-    let view: View
+    public let view: View
 
     init(view: View) {
         self.view = view
