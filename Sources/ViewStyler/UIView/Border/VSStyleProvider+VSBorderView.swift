@@ -10,19 +10,12 @@ import UIKit
 
 public extension VSStyleProvider where View: VSBorderView & VSLayerHolderView {
     @discardableResult
-    func set(baseStyle: View.BorderStyle) -> Self {
+    func setBorder(style: View.BorderStyle) -> Self {
         let layer = view.layer
 
-        layer.cornerRadius = baseStyle.cornerRadius ?? 0
-        layer.borderColor = baseStyle.borderColor?.cgColor
-        layer.borderWidth = baseStyle.borderWidth ?? 0
+        layer.borderColor = style.borderColor?.cgColor
+        layer.borderWidth = style.borderWidth ?? 0
 
-        return self
-    }
-
-    @discardableResult
-    func set(cornerRadius: CGFloat) -> Self {
-        view.layer.cornerRadius = cornerRadius
         return self
     }
 

@@ -25,10 +25,6 @@ public enum ExampleStringStyle: VSTextBaseStyle, VSTextParagraphStyle {
 public enum ExampleBorderStyle: VSBorderStyle {
     case `default`
 
-    public var cornerRadius: CGFloat? {
-        return 10
-    }
-
     public var borderWidth: CGFloat? {
         return 1
     }
@@ -62,6 +58,18 @@ public enum ExampleShadowStyle: VSShadowStyle {
     }
 }
 
+public enum ExampleFromStyle: VSFormStyle {
+    case `default`
+
+    public var cornerRadius: CGFloat {
+        20
+    }
+
+    public var corners: UIRectCorner? {
+        nil
+    }
+}
+
 extension UIView: VSShadowableView {
     public typealias ShadowStyle = ExampleShadowStyle
 }
@@ -70,9 +78,10 @@ extension UILabel: VSStringView {
     public typealias TextStyle = ExampleStringStyle
 }
 
-extension UIButton: VSBorderView, VSButton {
+extension UIButton: VSBorderView, VSFormableView, VSButton {
     public typealias BorderStyle = ExampleBorderStyle
     public typealias TextStyle = ExampleStringStyle
+    public typealias FormStyle = ExampleFromStyle
 }
 
 extension UITextField: VSTextField {

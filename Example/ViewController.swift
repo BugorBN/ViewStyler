@@ -37,7 +37,8 @@ class ViewController: UIViewController {
 
         button.styler
             .add(shadowStyle: .default)
-            .set(baseStyle: .default)
+            .add(formStyle: .default)
+            .setBorder(style: .default)
             .configure(state: .normal) { styler in
                 styler.set(text: "normal")
                     .add(fontStyle: .h1)

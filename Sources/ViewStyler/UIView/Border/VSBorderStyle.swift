@@ -9,13 +9,11 @@
 import UIKit
 
 public protocol VSBorderStyle {
-    var cornerRadius: CGFloat? { get }
     var borderWidth: CGFloat? { get }
     var borderColor: UIColor? { get }
 }
 
 public extension VSBorderStyle {
     var backgroundColor: UIColor? { nil }
-    var cornerRadius: CGFloat? { nil }
     var borderWidth: CGFloat? { nil }
 }
