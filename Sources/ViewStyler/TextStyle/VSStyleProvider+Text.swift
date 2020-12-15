@@ -47,6 +47,8 @@ public extension VSStyleProvider where View: VSStringView {
     func set(text: String?) -> VSStyleProvider<View> {
         if let text = text {
             view.holderedText = NSAttributedString(string: text)
+        } else {
+            view.holderedText = nil
         }
 
         return self
