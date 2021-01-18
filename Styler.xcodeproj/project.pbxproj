@@ -45,6 +45,14 @@
 		500F55692581196B00ED3EBD /* VSStyleProvider+VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F553F2581196A00ED3EBD /* VSStyleProvider+VSTextField.swift */; };
 		500F556A2581196B00ED3EBD /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F55402581196B00ED3EBD /* UITextField+.swift */; };
 		500F556B2581196B00ED3EBD /* VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F55412581196B00ED3EBD /* VSTextField.swift */; };
+		50165ADE25B5F49400B8B9C7 /* VSImageHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50165ADD25B5F49400B8B9C7 /* VSImageHolderView.swift */; };
+		50165AE225B5F4FC00B8B9C7 /* VSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50165AE125B5F4FC00B8B9C7 /* VSImageView.swift */; };
+		504D35F125B5F836004EE42B /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D35F025B5F836004EE42B /* UIImageView+.swift */; };
+		504D803625B1A4F60006E1EB /* UIStyler+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F55342581196A00ED3EBD /* UIStyler+UIImageView.swift */; };
+		504D803C25B1B0790006E1EB /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504D803B25B1B0790006E1EB /* Kingfisher.framework */; };
+		504D804225B234A40006E1EB /* VSImageViewOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D804125B234A40006E1EB /* VSImageViewOption.swift */; };
+		504D804625B234C90006E1EB /* VSImageViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D804525B234C90006E1EB /* VSImageViewPlaceholder.swift */; };
+		504D804A25B234E80006E1EB /* VSImageViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D804925B234E80006E1EB /* VSImageViewStyle.swift */; };
 		50519C4C2470589E00F26526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C4B2470589E00F26526 /* AppDelegate.swift */; };
 		50519C4E2470589E00F26526 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C4D2470589E00F26526 /* SceneDelegate.swift */; };
 		50519C502470589E00F26526 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50519C4F2470589E00F26526 /* ViewController.swift */; };
@@ -104,6 +112,7 @@
 		500F552F2581196A00ED3EBD /* VSStringStylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSStringStylable.swift; sourceTree = "<group>"; };
 		500F55302581196A00ED3EBD /* VSStyleProvider+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+URL.swift"; sourceTree = "<group>"; };
 		500F55322581196A00ED3EBD /* NSAttributedString+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+.swift"; sourceTree = "<group>"; };
+		500F55342581196A00ED3EBD /* UIStyler+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStyler+UIImageView.swift"; sourceTree = "<group>"; };
 		500F55382581196A00ED3EBD /* VSWrappedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSWrappedControl.swift; sourceTree = "<group>"; };
 		500F55392581196A00ED3EBD /* VSControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSControl.swift; sourceTree = "<group>"; };
 		500F553B2581196A00ED3EBD /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
@@ -112,6 +121,13 @@
 		500F553F2581196A00ED3EBD /* VSStyleProvider+VSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VSStyleProvider+VSTextField.swift"; sourceTree = "<group>"; };
 		500F55402581196B00ED3EBD /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		500F55412581196B00ED3EBD /* VSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSTextField.swift; sourceTree = "<group>"; };
+		50165ADD25B5F49400B8B9C7 /* VSImageHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSImageHolderView.swift; sourceTree = "<group>"; };
+		50165AE125B5F4FC00B8B9C7 /* VSImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSImageView.swift; sourceTree = "<group>"; };
+		504D35F025B5F836004EE42B /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		504D803B25B1B0790006E1EB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		504D804125B234A40006E1EB /* VSImageViewOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSImageViewOption.swift; sourceTree = "<group>"; };
+		504D804525B234C90006E1EB /* VSImageViewPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSImageViewPlaceholder.swift; sourceTree = "<group>"; };
+		504D804925B234E80006E1EB /* VSImageViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSImageViewStyle.swift; sourceTree = "<group>"; };
 		50519C482470589E00F26526 /* Styler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50519C4B2470589E00F26526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50519C4D2470589E00F26526 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504D803C25B1B0790006E1EB /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +187,7 @@
 				500F551F2581196A00ED3EBD /* UITextView */,
 				500F55252581196A00ED3EBD /* TextStyle */,
 				500F55312581196A00ED3EBD /* Extensions */,
+				500F55332581196A00ED3EBD /* UIImageView */,
 				500F55372581196A00ED3EBD /* UIControl */,
 				500F553A2581196A00ED3EBD /* String */,
 				500F553C2581196A00ED3EBD /* UITextField */,
@@ -265,6 +283,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		500F55332581196A00ED3EBD /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				500F55342581196A00ED3EBD /* UIStyler+UIImageView.swift */,
+				504D804125B234A40006E1EB /* VSImageViewOption.swift */,
+				504D804525B234C90006E1EB /* VSImageViewPlaceholder.swift */,
+				504D804925B234E80006E1EB /* VSImageViewStyle.swift */,
+				50165ADD25B5F49400B8B9C7 /* VSImageHolderView.swift */,
+				50165AE125B5F4FC00B8B9C7 /* VSImageView.swift */,
+				504D35F025B5F836004EE42B /* UIImageView+.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
 		500F55372581196A00ED3EBD /* UIControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +326,14 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
+		504D803A25B1B0790006E1EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				504D803B25B1B0790006E1EB /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50519C3F2470589E00F26526 = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +341,7 @@
 				50519C4A2470589E00F26526 /* Example */,
 				50519CA424730FCE00F26526 /* ViewStyler */,
 				50519C492470589E00F26526 /* Products */,
+				504D803A25B1B0790006E1EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -503,17 +544,21 @@
 				500F55472581196B00ED3EBD /* VSStyleProvider+VSButton.swift in Sources */,
 				500F55522581196B00ED3EBD /* VSTextView.swift in Sources */,
 				500F554C2581196B00ED3EBD /* VSBorderStyle.swift in Sources */,
+				504D803625B1A4F60006E1EB /* UIStyler+UIImageView.swift in Sources */,
 				500F55592581196B00ED3EBD /* VSStyleProvider+ParagraphStyle.swift in Sources */,
 				500F555A2581196B00ED3EBD /* VSTextBaseStyle.swift in Sources */,
+				504D35F125B5F836004EE42B /* UIImageView+.swift in Sources */,
 				500F55642581196B00ED3EBD /* VSWrappedControl.swift in Sources */,
 				50EB9E062582763100DE0EE0 /* VSStyleProvider+VSShadowableView.swift in Sources */,
 				500F55572581196B00ED3EBD /* VSStringView.swift in Sources */,
 				500F55552581196B00ED3EBD /* VSWrappedTextView.swift in Sources */,
+				50165ADE25B5F49400B8B9C7 /* VSImageHolderView.swift in Sources */,
 				500F55682581196B00ED3EBD /* VSWrappedTextField.swift in Sources */,
 				500F55432581196B00ED3EBD /* VSButton.swift in Sources */,
 				500F55542581196B00ED3EBD /* VSTextHolderView.swift in Sources */,
 				500F554A2581196B00ED3EBD /* VSStylezable.swift in Sources */,
 				500F55562581196B00ED3EBD /* VSStyleProvider+Text.swift in Sources */,
+				504D804A25B234E80006E1EB /* VSImageViewStyle.swift in Sources */,
 				50A80BC62587E18600AF8088 /* VSFormableView.swift in Sources */,
 				50EB9DFC2582758C00DE0EE0 /* VSShadowStyle.swift in Sources */,
 				500F55672581196B00ED3EBD /* VSTextFieldHolderView.swift in Sources */,
@@ -523,6 +568,7 @@
 				50A80BCF2587E1B100AF8088 /* VSStyleProvider+VSFormableView.swift in Sources */,
 				500F556B2581196B00ED3EBD /* VSTextField.swift in Sources */,
 				500F55582581196B00ED3EBD /* VSStyleProvider+BaseStyle.swift in Sources */,
+				504D804225B234A40006E1EB /* VSImageViewOption.swift in Sources */,
 				500F55652581196B00ED3EBD /* VSControl.swift in Sources */,
 				500F55482581196B00ED3EBD /* VSItem.swift in Sources */,
 				500F55452581196B00ED3EBD /* VSButtonHolderView.swift in Sources */,
@@ -534,7 +580,9 @@
 				500F555F2581196B00ED3EBD /* VSStyleProvider+URL.swift in Sources */,
 				500F55422581196B00ED3EBD /* UILabel+.swift in Sources */,
 				500F554B2581196B00ED3EBD /* VSStyleProvider.swift in Sources */,
+				504D804625B234C90006E1EB /* VSImageViewPlaceholder.swift in Sources */,
 				50EB9E00258275D800DE0EE0 /* VSShadowableView.swift in Sources */,
+				50165AE225B5F4FC00B8B9C7 /* VSImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +776,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ViewStyler/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -756,6 +808,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ViewStyler/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
