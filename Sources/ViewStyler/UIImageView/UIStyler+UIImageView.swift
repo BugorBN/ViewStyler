@@ -6,6 +6,16 @@
 import Kingfisher
 import UIKit
 
+private class URLHolder {
+    let url: URL
+
+    init(url: URL) {
+        self.url = url
+    }
+}
+
+private let mapTable = NSMapTable<AnyObject, URLHolder>.weakToStrongObjects()
+
 public extension VSStyleProvider where View: VSImageView {
     @discardableResult
     func set(imageURL: URL?, style: View.ImageStyle) -> Self {
@@ -13,8 +23,11 @@ public extension VSStyleProvider where View: VSImageView {
 
         guard let imageURL = imageURL else {
             set(placeholder: style.errorPlaceholder)
+            mapTable.setObject(nil, forKey: view)
             return self
         }
+
+        mapTable.setObject(URLHolder(url: imageURL), forKey: view)
 
         set(placeholder: style.loadingPlaceholder)
 
@@ -38,9 +51,24 @@ public extension VSStyleProvider where View: VSImageView {
     }
 
     @discardableResult
+    func set(image: UIImage?) -> Self {
+        view.image = image
+        return self
+    }
+
+    @discardableResult
     func clear() -> Self {
         view.kf.cancelDownloadTask()
         view.image = nil
+        mapTable.removeObject(forKey: view)
+        return self
+    }
+
+    @discardableResult
+    func hideViewIfEmpty() -> Self {
+        if mapTable.object(forKey: view)?.url == nil {
+            view.isHidden = view.image == nil
+        }
         return self
     }
 

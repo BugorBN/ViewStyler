@@ -49,6 +49,8 @@ class ViewController: UIViewController {
                     .add(fontStyle: .h1)
                     .add(color: .darkGray)
             }
+            .add(command: { print("Touch") })
+            .hideViewIfEmpty(state: .normal)
 
         textField.styler
             .set(text: "Text")

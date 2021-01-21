@@ -13,6 +13,7 @@ public protocol VSImageHolderView: VSItem {
     var kf: Kingfisher.KingfisherWrapper<UIImageView> { get }
     var bounds: CGRect { get }
     var image: UIImage? { get set }
+    var isHidden: Bool { get set }
     var contentMode: UIView.ContentMode { get set }
     var backgroundColor: UIColor? { get set }
 }
