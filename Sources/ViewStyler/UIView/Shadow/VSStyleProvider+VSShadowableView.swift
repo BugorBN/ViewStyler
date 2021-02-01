@@ -20,7 +20,10 @@ public extension VSStyleProvider where View: VSShadowableView & VSLayerHolderVie
         layer.shadowRadius = (shadowStyle.blur ?? 0) / 2
 
         if let spread = shadowStyle.spread {
-            layer.shadowPath = UIBezierPath(rect: layer.bounds.insetBy(dx: -spread, dy: -spread)).cgPath
+            layer.shadowPath = UIBezierPath(
+                roundedRect: layer.bounds.insetBy(dx: -spread, dy: -spread),
+                cornerRadius: layer.cornerRadius
+            ).cgPath
         } else {
             layer.shadowPath = nil
         }
