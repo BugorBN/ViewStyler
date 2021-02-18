@@ -14,4 +14,10 @@ public extension VSStyleProvider where View: VSTextView {
         configurator(VSInnerStyleProvider(view: VSWrappedTextView(view: view, state: .link)))
         return self
     }
+
+    @discardableResult
+    func editingAttributes(configurator: @escaping (VSStyleProvider<VSWrappedTextField<View>>) -> Void) -> VSStyleProvider<View> {
+        configurator(VSInnerStyleProvider(view: VSWrappedTextField(view: view, state: .editing)))
+        return self
+    }
 }

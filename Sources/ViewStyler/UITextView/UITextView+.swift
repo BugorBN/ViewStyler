@@ -18,6 +18,15 @@ extension UITextView: VSTextHolderView, VSStringHolderView {
         }
     }
 
+    public var holderedEditingTextAttributes: [NSAttributedString.Key : Any] {
+        get {
+            typingAttributes
+        }
+        set {
+            typingAttributes = newValue
+        }
+    }
+
     public var holderedText: NSAttributedString? {
         get {
             if let attributedText = attributedText {

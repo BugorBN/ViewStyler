@@ -11,6 +11,7 @@ import Foundation
 public class VSWrappedTextView<View: VSTextView>: VSStringView {
     public enum State {
         case link
+        case editing
     }
 
     public typealias TextStyle = View.TextStyle
@@ -23,12 +24,16 @@ public class VSWrappedTextView<View: VSTextView>: VSStringView {
             switch state {
             case .link:
                 return NSAttributedString(string: "...", attributes: view.holderedLinkTextAttributes)
+            case .editing:
+                return NSAttributedString(string: "...", attributes: view.holderedEditingTextAttributes)
             }
         }
         set {
             switch state {
             case .link:
                 view.holderedLinkTextAttributes = newValue?.attributes(at: 0, effectiveRange: nil) ?? [:]
+            case .editing:
+                view.holderedEditingTextAttributes = newValue?.attributes(at: 0, effectiveRange: nil) ?? [:]
             }
         }
     }
