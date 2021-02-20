@@ -9,5 +9,6 @@
 import Foundation
 
 public protocol VSTextHolderView: VSItem {
+    var holderedEditingTextAttributes: [NSAttributedString.Key: Any] { get set }
     var holderedLinkTextAttributes: [NSAttributedString.Key: Any] { get set }
 }
