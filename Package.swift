@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ViewStyler",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v10)],
     products: [
         .library(
             name: "ViewStyler",
