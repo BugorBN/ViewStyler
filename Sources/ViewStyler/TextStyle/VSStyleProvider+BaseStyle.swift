@@ -25,6 +25,8 @@ public extension VSStyleProvider where View: VSStringView {
             add(letterSpacing: letterSpacing)
         }
 
+        add(ligatures: fontStyle.useLigatures)
+
         return self
     }
 
@@ -49,6 +51,12 @@ public extension VSStyleProvider where View: VSStringView {
     @discardableResult
     func add(letterSpacing: CGFloat) -> VSStyleProvider<View> {
         view.addAttribute(.kern, value: letterSpacing)
+        return self
+    }
+
+    @discardableResult
+    func add(ligatures flag: Bool) -> VSStyleProvider<View> {
+        view.addAttribute(.ligature, value: flag ? 1 : 0)
         return self
     }
 }

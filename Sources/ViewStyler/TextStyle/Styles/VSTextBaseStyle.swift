@@ -13,10 +13,12 @@ public protocol VSTextBaseStyle {
     var color: UIColor? { get }
     var underlineStyle: NSUnderlineStyle? { get }
     var letterSpacing: CGFloat? { get }
+    var useLigatures: Bool { get }
 }
 
 public extension VSTextBaseStyle {
     var color: UIColor? { nil }
     var underlineStyle: NSUnderlineStyle? { nil }
     var letterSpacing: CGFloat? { nil }
+    var useLigatures: Bool { true }
 }
